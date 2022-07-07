@@ -15,6 +15,8 @@ import DocTitleOne from '../components/CustomHooks/scenerioOne/DocTitleOne'
 import DocTitleTwo from '../components/CustomHooks/scenerioOne/DocTitleTwo'
 import CounterOne from  '../components/CustomHooks/senerioTwo/CounterOne'
 import CounterTwo from  '../components/CustomHooks/senerioTwo/CounterTwo'
+import Input from '../components/CustomHooks/scenerioThree/Input'
+import Form from '../components/FormWithHook/form'
 
 
 function HomeScreen() {
@@ -35,8 +37,10 @@ function HomeScreen() {
         {/* <IntervalTimer /> */}
         {/* <DocTitleOne />
         <DocTitleTwo /> */}
-        <CounterOne />
-        <CounterTwo />
+        {/* <CounterOne />
+        <CounterTwo /> */}
+        {/* <Input /> */}
+        <Form />
     </div>
   )
 }
