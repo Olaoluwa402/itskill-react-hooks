@@ -9,6 +9,12 @@ import UseEffectOnce from '../components/UseEffectOnce'
 import UseEffectCleanup from '../components/UseEffectCleanup'
 import Logic from '../components/Logic'
 import InterverCounter from '../components/InterverCounter'
+import InputRef from '../components/UseRef/InputRef'
+import IntervalTimer from '../components/UseRef/IntervalTimer'
+import DocTitleOne from '../components/CustomHooks/scenerioOne/DocTitleOne'
+import DocTitleTwo from '../components/CustomHooks/scenerioOne/DocTitleTwo'
+import CounterOne from  '../components/CustomHooks/senerioTwo/CounterOne'
+import CounterTwo from  '../components/CustomHooks/senerioTwo/CounterTwo'
 
 
 function HomeScreen() {
@@ -24,8 +30,13 @@ function HomeScreen() {
         {/* <UseEffectOnce /> */}
         {/* <UseEffectCleanup /> */}
         {/* <Logic /> */}
-        <InterverCounter />
-       
+        {/* <InterverCounter /> */}
+        {/* <InputRef /> */}
+        {/* <IntervalTimer /> */}
+        {/* <DocTitleOne />
+        <DocTitleTwo /> */}
+        <CounterOne />
+        <CounterTwo />
     </div>
   )
 }

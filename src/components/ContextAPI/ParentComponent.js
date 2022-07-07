@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useContext, Component} from 'react'
 import { Consumer } from './ContextAPI'
+import UserContext from './ContextAPI'
+
 
 function ParentComponent() {
   return (
@@ -9,15 +11,28 @@ function ParentComponent() {
   )
 }
 
-const CONTEXT_API_C = ()=>{
-    return(
-        <CONTEXT_API_D />
-    )
+class CONTEXT_API_C extends Component{
+    static contextType = UserContext
+    render(){
+        console.log(this.context)
+        const {user} = this.context
+        return(
+            <>
+                <CONTEXT_API_D />
+                <h2>class component context - {user.firstName}</h2>
+            </>
+        )
+    }
 }
 
 const CONTEXT_API_D = ()=>{
+             const user = useContext(Consumer)
     return(
-        <CONTEXT_API_F />
+        <>
+            <CONTEXT_API_F />
+           <h2>Component D - {user.user.lastName}</h2>
+           <h2>Component D - {user.lists[0]}</h2>
+        </>
     )
 }
 const CONTEXT_API_F = ()=>{

@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       {/* 2. step to context setup - provide a value to the context provider */}
       <Provider value={GlobalData}>
-        <ParentComponent />
-        {/* <Router /> */}
+        {/* <ParentComponent /> */}
+        <Router />
       </Provider>
     </div>
   );
